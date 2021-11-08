@@ -4,13 +4,15 @@ class QuestionsController < ApplicationController
 
   def answer
     @question = params[:question]
-    @answer =
-  if answer == "I am going to work!"
-    puts "Great!"
-  elsif user_message.include?("?")
-    puts "Silly question, get dressed and go to work!"
-  else
-    puts "I don't care,get dressed and go to work!"
-  end
+    @answer = params[:answer]
+
+    if @question == "I am going to work"
+      puts @answer = "Great!"
+    elsif
+      @question.end_with?("?")
+      puts @answer = "Silly question, get dressed and go to work!"
+    else
+      @answer = "I don't care, get dressed and go to work!"
+    end
   end
 end

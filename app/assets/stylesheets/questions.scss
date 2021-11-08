@@ -1,3 +1,52 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ // Defining a variable
+ $gray: #F4F4F4;
+
+ body {
+   text-align: center;
+   background-color: #cccccc;
+  background-image: radial-gradient(red, yellow);
+ }
+ h1{
+  color: black;
+  font-weight: bold;
+  transition: 1s;
+ }
+ h1:hover{
+   color: rgb(197, 216, 21);
+ }
+ .questions{
+   border: 4mm ridge rgba(23, 21, 24, 0.6);
+   padding: 10px;
+   margin-bottom: 20px;
+   color: black;
+   transition: 1s;
+ }
+ .questions:hover{
+   background-color: rgb(197, 216, 21);
+ }
+ .answer {
+  border: 4mm ridge rgba(23, 21, 24, 0.6);
+  padding: 10px;
+  margin-bottom: 30px;
+  color: black;
+  transition: 1s;
+ }
+  .answer:hover{
+   background-color: rgb(197, 216, 21);
+ }
+ .back a{
+  text-decoration: none;
+  font-size: 25px;
+  border: 1mm ridge rgba(23, 21, 24, 0.6);
+  transition: 1s;
+  background-color: rgb(204, 94, 3);
+  padding: 10px;
+  color: black;
+ }
+ .back a:hover{
+ background-color: rgb(197, 216, 21);
+ color: orange;
+ }
